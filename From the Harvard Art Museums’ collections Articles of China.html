@@ -73,22 +73,37 @@
     stroke: #bfd42f;
   }
 
+
+
+.speficication-list{
+  position:relative;
+  display:flex;
+  flex-direction:row-reverse;
+
+ }
+
 .speficication-list-items {
 
   display:grid;
   grid-template-columns: 30% 70%;
   padding:1em;
+  position:absolute;
 }
 
 .speficication-list-items {
-    border-top: 1px solid #e6e6e6;
+   
 }
 
 .speficication-list-items  h4 {
 
   padding:0;
   margin:0;
-  color: #999;
+  color: #666;
+ 
+}
+
+.hiding {
+  visibility:none;
 }
 
 
@@ -96,15 +111,43 @@
 
     margin-bottom: 1em;
     padding-bottom: 0.5em;
-
+ 
 }
 
 .speficication-list-items h1{
 
     margin-bottom: 0px;
     padding-bottom: 0px;
-    font-size: 1em;
+    font-size: 18px;
 
+
+}
+
+.specification-list p a{
+
+  border-bottom: 1px solid #666;
+}
+
+
+.bullets{
+  list-style:none;
+  display:flex;
+  width:100%;
+  justify-content:space-evenly;
+  margin:0;
+  padding:0;
+}
+
+
+.circle{
+  width:10px;
+  height:10px;
+  border:1px solid #666;
+  border-radius: 50%;
+}
+
+.selected-cirlce{
+  background-color:#666;
 }
 
 
@@ -156,7 +199,7 @@ body{
           <div class="sub-nav">
             <div class="sub-nav__inner">
               <div class="sub-nav__links">
-                <h2>Visit the Harvard Art Museums</h2>
+                <h2>Visit the Harvard Art Museums</h1>
                 <ul>
                   <li><a href="https://www.harvardartmuseums.org/plan-your-visit">Plan Your Visit</a></li>
                   <li><a href="https://www.harvardartmuseums.org/visit/exhibitions">Exhibitions</a></li>
@@ -183,7 +226,7 @@ body{
           <div class="sub-nav">
             <div class="sub-nav__inner">
               <div class="sub-nav__links">
-                <h2>Browse Our Collections</h2>
+                <h2>Browse Our Collections</h1>
                 <ul>
                   <li><a href="https://www.harvardartmuseums.org/collections">All Artwork</a></li>
                   <li><a href="https://www.harvardartmuseums.org/collections/special-collections">Special Collections</a></li>
@@ -213,7 +256,7 @@ body{
           <div class="sub-nav">
             <div class="sub-nav__inner">
               <div class="sub-nav__links">
-                <h2>Support the Harvard Art Museums</h2>
+                <h2>Support the Harvard Art Museums</h1>
                 <ul>
                   <li><a href="https://www.harvardartmuseums.org/support/make-a-gift">Make a Gift</a></li>
                   <li><a href="https://www.harvardartmuseums.org/support/members">Members</a></li>
@@ -237,7 +280,7 @@ body{
           <div class="sub-nav">
             <div class="sub-nav__inner">
               <div class="sub-nav__links">
-                <h2>Teaching &amp; Research</h2>
+                <h2>Teaching &amp; Research</h1>
                 <ul>
                   <li><a href="https://www.harvardartmuseums.org/teaching-and-research">Overview</a></li>
                   <li><a href="https://www.harvardartmuseums.org/teaching-and-research/education-departments/faculty-resources">Academic and Public Programs</a></li>
@@ -264,7 +307,7 @@ body{
           <div class="sub-nav">
             <div class="sub-nav__inner">
               <div class="sub-nav__links">
-                <h2>About the Museums</h2>
+                <h2>About the Museums</h1>
                 <ul>
                   <li><a href="https://www.harvardartmuseums.org/about/mission">Mission</a></li>
                   <li><a href="https://www.harvardartmuseums.org/about/directors-message">Director's Message</a></li>
@@ -12292,6 +12335,8 @@ function(c){"undefined"!=typeof c&&b.isArray(c)&&b.each(c,function(c,e){var d=b.
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <div class="specification-list">
 
+
+
         <setion class="speficication-list-items">
                 
          <h1>Identification and Creation</h1>
@@ -12320,7 +12365,7 @@ function(c){"undefined"!=typeof c&&b.isArray(c)&&b.each(c,function(c,e){var d=b.
                   
                </div>
         </setion>
-        <section class="speficication-list-items">
+        <section class="speficication-list-items hidden">
 
         <h1>Physical Descriptions</h1>
 
@@ -12338,7 +12383,7 @@ function(c){"undefined"!=typeof c&&b.isArray(c)&&b.each(c,function(c,e){var d=b.
                  </div>
         
       </section>
-      <section class="speficication-list-items">  
+      <section class="speficication-list-items hidden">  
 
        <h1>Provenance</h1>
                   <div>
@@ -12347,7 +12392,7 @@ function(c){"undefined"!=typeof c&&b.isArray(c)&&b.each(c,function(c,e){var d=b.
                   </div>
 
       </section>  
-      <section class="speficication-list-items">
+      <section class="speficication-list-items hidden">
 
       <h1>Acquisition and Rights</h1>
         
@@ -12366,7 +12411,7 @@ function(c){"undefined"!=typeof c&&b.isArray(c)&&b.each(c,function(c,e){var d=b.
               </div>          
       
      </section>
-     <section  class="speficication-list-items">
+     <section  class="speficication-list-items hidden">
 
         <h1>Publication History</h1>
 
@@ -12377,7 +12422,7 @@ function(c){"undefined"!=typeof c&&b.isArray(c)&&b.each(c,function(c,e){var d=b.
 
 
      </section>
-     <section class="speficication-list-items">
+     <section class="speficication-list-items hidden">
 
        <h1>Exhibition History</h1>
 
@@ -12387,7 +12432,7 @@ function(c){"undefined"!=typeof c&&b.isArray(c)&&b.each(c,function(c,e){var d=b.
             </div>
 
       </section>
-      <section class="speficication-list-items">
+      <section class="speficication-list-items hidden">
 
      <h1>Subjects and Contexts</h1>
           
@@ -12397,12 +12442,28 @@ function(c){"undefined"!=typeof c&&b.isArray(c)&&b.each(c,function(c,e){var d=b.
           </div>
         
     </section>
-    <section class="speficication-list-items">
-        <h1></h1>
+    <section class="speficication-list-items hidden">
+        <h4></h4>
         <div>
           <p>This record has been reviewed by the curatorial staff but may be incomplete. Our records are frequently revised and enhanced. For more information please contact the Division of European and American Art at <a href="mailto:am_europeanamerican@harvard.edu"><span>am_europeanamerican@harvard.edu</span></a></p>
         </div>
     </section>
+
+
+
+
+  <ul class="bullets">
+    <li><div class="circle selected-cirlce"></div></li>
+    <li><div class="circle"></div></li>
+    <li><div class="circle"></div></li>
+    <li><div class="circle"></div></li>
+    <li><div class="circle"></div></li>
+    <li><div class="circle"></div></li>
+    <li><div class="circle"></div></li>
+    <li><div class="circle"></div></li>
+  </ul>
+
+
 </div>
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
